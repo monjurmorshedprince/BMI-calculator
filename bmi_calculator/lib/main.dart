@@ -29,6 +29,17 @@ class MyApp extends StatelessWidget {
                   Container(width: 200, height: 200, color: Colors.green),
                 ],
               ),
+              Container(
+                height: 200,
+                width: double.infinity,
+                color: Colors.green,
+                child: Center(
+                  child: Text(
+                    'This is a container with a long text that should wrap properly.',
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
